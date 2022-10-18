@@ -1,0 +1,49 @@
+<div class="container">
+  <mat-card >
+      <mat-card-content>
+        <div class="header">
+          <h2 *ngIf="!deviceXs"> CREATE NEW ACCOUNT </h2>
+          <h3 *ngIf="deviceXs"> CREATE NEW ACCOUNT </h3>
+        </div>
+        <form (ngSubmit)="onRegisterForm()" name="registerForm" [formGroup]="registerForm">
+            <div >
+                <mat-form-field class="full-width" [appearance]="deviceXs ? 'fill': 'outline'">
+                    <mat-label>username</mat-label>
+                    <input formControlName="username" matInput required />
+                    <mat-error *ngIf="registerForm?.controls?.username?.hasError('required') && (registerForm?.controls?.username?.dirty || registerForm?.controls?.username?.touched)">
+                      this field is required
+                      </mat-error>
+                </mat-form-field>
+              </div>
+          <div class="email-input">
+            <mat-form-field class="full-width" [appearance]="deviceXs ? 'fill': 'outline'">
+                <mat-label>email/phone</mat-label>
+                <input formControlName="email" matInput required />
+                	<mat-error *ngIf="registerForm?.controls?.email?.hasError('required') && (registerForm?.controls?.email?.dirty || registerForm?.controls?.email?.touched)">
+                  this field is required
+                  </mat-error>
+                  <mat-error *ngIf="registerForm?.controls?.email?.hasError('pattern') && (registerForm?.controls?.email?.dirty ||registerForm?.controls?.email?.touched)">
+                   enter valid email or phone number
+                  </mat-error>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field class="full-width" [appearance]="deviceXs ? 'fill': 'outline'">
+            <mat-label> password</mat-label>
+            <input  matInput (paste)="(false)" placeholder="Password" type="password" formControlName="password" required/>
+            </mat-form-field>
+          </div>
+          <div>
+          <mat-form-field class="full-width" [appearance]="deviceXs ? 'fill': 'outline'">
+            <mat-label>confirm password</mat-label>
+            <input  matInput placeholder="Confirm Password"  formControlName="Confirm_password" required/>
+            </mat-form-field>
+            </div>
+          <button mat-flat-button color="primary"> Register </button>
+          <p style="color: black; padding-top: 7px;">Already have an account?  
+            <a routerLink="" (click)="onLogin()">  login here </a>
+          </p>
+        </form>
+      </mat-card-content>  
+    </mat-card>
+</div>

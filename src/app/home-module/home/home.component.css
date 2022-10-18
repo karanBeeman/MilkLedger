@@ -1,0 +1,15 @@
+.container-fluid {
+    --bs-gutter-x: 0rem;
+/*   
+        max-width: 100%;
+        box-sizing: border-box;
+        background-image: url("/assets/images/maadu.jpg");
+        background-size:100%;
+        height: calc(100vh - 1px); 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;  */
+       
+      
+}

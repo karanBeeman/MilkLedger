@@ -1,0 +1,75 @@
+.example-button-row {
+    display: table-cell;
+    width: 200px;
+  }
+
+  .example-button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
+
+  /* .mat-toolbar {
+    background-color: #1a3c6e;
+    height: 97px !important;
+  } */
+
+  .headerHover:hover {
+      background-color: cadetblue;
+  }
+
+  .example-spacer {
+    flex: 1 4 auto;
+  }
+ 
+  .logo {
+    padding: 10px 10px 0 0;
+  }
+
+  .mat-raised-button {
+    color: black;
+    background-color: white;
+  } 
+
+  .navbar-brand:hover {
+    background-color: red;
+  }
+
+  button.mat-raised-button:hover {
+    background-color: yellow;
+  } 
+
+  .navbar {
+    background-color: #343471;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 998;
+  }
+
+ @media only screen and (max-width: 900px) {
+    .mat-toolbar {
+      background-color: #1a3c6e;
+      height: 80px !important;
+      width: 100vh;
+    }
+  
+ } 
+
+ .form-select {
+   width: 8%;
+   margin-right: 7px;
+   border-radius: 5px;
+ }
+
+ @media only screen and (max-width: 900px) {
+  .form-select {
+    width: 30%;
+    float: left;
+    border-radius: 20px;
+    margin: 8px 8px 8px 0;
+  }
+  .example-button-row {
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+  }
+} 

@@ -1,0 +1,63 @@
+.heading, .account_circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    margin-right: 1em;
+  }
+
+.account_image{
+  font-size: 60px;
+  height: 60px;
+  width: 80px;
+  }
+
+ /* .updateform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ } 
+   */
+ 
+
+.mat-button-base {
+    margin: 8px 8px 8px 0;
+}
+
+mat-card, mat-card-content {
+    width: 500px;
+    min-height: 500px;
+}
+
+@media screen and (max-width: 799px) {
+    mat-card, mat-card-content {
+        width: 250px;
+        min-height: 250px;
+    }
+  }
+
+@media screen and (min-width: 769px) {
+    .field {
+      margin-top: 2em;
+      margin-right: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;  
+    }
+  }
+
+  .field {
+    margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}  
+

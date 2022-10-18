@@ -1,0 +1,33 @@
+table {
+    width: 70%;
+    margin: 2em auto;
+}
+
+.mat-button-base {
+    margin: 8px 8px 8px 0;
+}
+
+mat-toolbar {
+    background-color: #536dfe;
+   min-width: 100%;
+}
+
+.toolbar {
+    min-width: 100%;
+}
+
+.account_image {
+   
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  /* ::ng-deep .mat-menu-content {
+    width: 200px !important; 
+    height: 120px !important; 
+  } */

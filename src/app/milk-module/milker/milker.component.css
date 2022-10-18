@@ -1,0 +1,100 @@
+::ng-deep .on-Edit .mat-form-field-underline{
+    display: legacy;
+  }
+
+  ::ng-deep .without-Edit .mat-form-field-underline {
+    display: none;
+  }
+
+  /* .mat-form-field-underline .mat-form-field-outline {
+    color: rgb(255, 255, 255);
+    
+  } */
+
+table {
+    width: 80%;
+    table-layout: auto;  
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+th.mat-header-cell td.mat-cell {
+  text-align: center;
+  min-width: 50px;
+  max-width: 100px;
+}
+
+/* th.mat-header:first-child, td.mat-cell:first-child {
+  text-align: center;
+  min-width: 10px;
+  max-width: 30px;
+} */
+
+@media screen and (max-width: 799px) {
+  .newROwandHeading {
+      display:grid;
+  }
+}
+
+form {
+    margin-top: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+@media screen and (max-width: 799px) {
+  form {
+      display: block;
+      overflow-x: scroll;
+  }
+}
+
+::ng-deep .position .mat-form-field-underline{
+    display: none;
+  }
+
+.container {
+   width: 100%;
+   margin: 5em auto;
+    /* background-color: white; */
+     /* The Fallback */
+     /* background: rgb(200, 54, 54);  */
+     /* background: rgba(22, 247, 56, 0.5);
+     background-size: cover;
+     display: block; */
+ 
+}  
+
+.paginator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  color: black;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-Row{
+  float: right;
+  font-size: 38px;
+  width: 40px;
+  height: 40px;
+  margin-right: 4em;
+}
+
+mat-form-field {
+    width: 50px;
+}
+
+.mat-cell {
+  padding: 0 5px;
+
+}

@@ -1,0 +1,47 @@
+<mat-toolbar div="toolbar">
+<mat-toolbar-row >
+    <div fxLayout="row">
+    <button mat-button>
+        <mat-icon *ngIf="deviceXs" routerLink="home">home</mat-icon>
+        <span *ngIf="!deviceXs"class="logo" routerLink="/home"> paalkanaku </span>
+    </button>
+    
+    <div *ngIf="!deviceXs">
+        <button mat-raised-button routerLink="milk-customers">Customer</button>
+        <button mat-raised-button routerLink="milkers">Milker</button>
+        <button mat-raised-button>MilkLedger</button>
+    </div>
+   
+    </div>
+    <span class="example-spacer"></span>
+
+    
+     {{user}}
+    <!-- <div> -->
+        
+        <mat-icon class="account_image" [matMenuTriggerFor]="belowMenu">account_circle</mat-icon>
+        <mat-menu #belowMenu="matMenu">
+            <button mat-menu-item (click)="openDialog()">
+                <mat-icon > person </mat-icon>
+                profile</button>
+                <button mat-menu-item>
+                    <mat-icon> settings </mat-icon>
+                    account settings</button>
+            <button mat-menu-item>
+                <mat-icon> logout</mat-icon>
+                Logout
+            </button>
+          </mat-menu>
+    <!-- </div> -->
+    
+
+   
+</mat-toolbar-row>
+<mat-toolbar-row  *ngIf="deviceXs" fxLayoutAlign="space-between center">
+        <button mat-raised-button routerLink="milk-customers">Customer</button>
+        <button mat-raised-button routerLink="milkers">Milker</button>
+        <button mat-raised-button>MilkLedger</button>
+    
+</mat-toolbar-row>
+</mat-toolbar>
+

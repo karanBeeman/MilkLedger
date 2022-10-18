@@ -1,0 +1,95 @@
+mat-card{
+    
+    min-width: 450px;
+    /* margin: 2em auto; */
+    text-align: center;
+    min-height: 400px;
+    background-color: white;
+  }
+
+
+@media only screen and (max-width: 900px) {
+    mat-card {
+      min-width: auto;
+      min-height: auto;
+    }
+    mat-form-field {
+      min-width: auto;
+    }
+    
+ }
+
+  .header{
+    text-align: center;
+    color: black;
+  }
+  
+  .full-width{
+    width: 90%;
+  }
+  
+  .mat-form-field-appearance-outline .mat-form-field-appearance-outline {
+    color:black;
+  }
+  
+  .email-input{
+    padding-top: 10px;
+  }
+  .aLink{
+    float: right;
+    padding-right: 40px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  mat-grid-tile {
+    background: white;
+  }
+  
+  .img-tile{
+    margin: 2em auto;
+    text-align: center;
+    max-height: 100vh;
+    position: relative;
+  }
+  
+  
+  .container {
+    max-width: 100%;
+    box-sizing: border-box;
+    background-image: url("/assets/images/maadu.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: calc(100vh - 9vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+  
+  }
+
+  button.mat-flat-button:hover {
+    background-color: dimgrey;
+  }
+
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: black!important;
+     /* opacity: 1!important; */
+  }
+  
+  ::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick{
+    color: red!important;
+    opacity: 0.8!important;
+  }
+  ::ng-deep .mat-form-field-label {
+    color: rgba(0,0,0,.6)!important;
+    /* // color: $mainColor!important; */
+  }
+  
+  ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: black!important;
+  }
+  
+  mat-form-field {
+    color:black;
+  }
